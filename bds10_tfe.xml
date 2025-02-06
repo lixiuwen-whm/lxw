@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+========================================================================
+   Copyright (c) 2019-2024 Qualcomm Technologies, Inc.
+   All Rights Reserved.
+   Confidential and Proprietary - Qualcomm Technologies, Inc.
+========================================================================
+-->
+<bds10_tfe
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../../api/chromatix/XSD/isp/bds_1_0.xsd">
+  <enable_section>
+    <bds_enable>1</bds_enable>
+  </enable_section>
+  <module_version major_revision="1" minor_revision="0" incr_revision="0"/>
+  <parameter_version>
+    <revision>0</revision>
+  </parameter_version>
+  <control_variables>
+    <control_var_type>control_pre_scale_ratio</control_var_type>
+    <control_var_type>control_drc_gain</control_var_type>
+    <control_var_type>control_aec_exp_sensitivity_ratio</control_var_type>
+    <control_var_type>control_gain</control_var_type>
+  </control_variables>
+  <control_method>
+    <aec_exp_control>control_gain</aec_exp_control>
+    <aec_hdr_control>control_aec_exp_sensitivity_ratio</aec_hdr_control>
+  </control_method>
+  <chromatix_bds10_reserve>
+    <white_balance_enable>1</white_balance_enable>
+    <dpc_enable>1</dpc_enable>
+    <horizontal_output_rounding_pattern_TL_BL>0</horizontal_output_rounding_pattern_TL_BL>
+    <horizontal_output_rounding_pattern_TR_BR>0</horizontal_output_rounding_pattern_TR_BR>
+    <vertical_output_rounding_pattern_TL_TR>0</vertical_output_rounding_pattern_TL_TR>
+    <vertical_output_rounding_pattern_BL_BR>0</vertical_output_rounding_pattern_BL_BR>
+    <horizontal_output_rounding_pattern_Y>0</horizontal_output_rounding_pattern_Y>
+    <vertical_output_rounding_pattern_Y>0</vertical_output_rounding_pattern_Y>
+  </chromatix_bds10_reserve>
+  <chromatix_bds10_core>
+    <mod_bds10_pre_scale_ratio_data>
+      <pre_scale_ratio_trigger>
+        <start>1</start>
+        <end>2.2</end>
+      </pre_scale_ratio_trigger>
+      <pre_scale_ratio_data>
+        <mod_bds10_drc_gain_data>
+          <drc_gain_trigger>
+            <start>1</start>
+            <end>100</end>
+          </drc_gain_trigger>
+          <drc_gain_data>
+            <mod_bds10_hdr_aec_data>
+              <hdr_aec_trigger>
+                <exp_time_start>1</exp_time_start>
+                <exp_time_end>16</exp_time_end>
+                <aec_sensitivity_start>1</aec_sensitivity_start>
+                <aec_sensitivity_end>16</aec_sensitivity_end>
+                <exp_gain_start>1</exp_gain_start>
+                <exp_gain_end>16</exp_gain_end>
+              </hdr_aec_trigger>
+              <hdr_aec_data>
+                <mod_bds10_aec_data>
+                  <aec_trigger>
+                    <lux_idx_start>1</lux_idx_start>
+                    <lux_idx_end>900</lux_idx_end>
+                    <gain_start>1</gain_start>
+                    <gain_end>200</gain_end>
+                  </aec_trigger>
+                  <bds10_rgn_data>
+                    <dpc_fmax>80</dpc_fmax>
+                    <dpc_fmin>32</dpc_fmin>
+                    <dpc_offset>32</dpc_offset>
+                    <direction_enable>1</direction_enable>
+                    <direction_offset>16</direction_offset>
+                    <f0_coeff_tab>
+                      <f0_coeff>1 2 4</f0_coeff>
+                    </f0_coeff_tab>
+                    <f1_coeff_tab>
+                      <f1_coeff>1 2 4</f1_coeff>
+                    </f1_coeff_tab>
+                    <f2_coeff_tab>
+                      <f2_coeff>1 2 4</f2_coeff>
+                    </f2_coeff_tab>
+                    <h_coeff_tab>
+                      <h_coeff>1 2 2 4</h_coeff>
+                    </h_coeff_tab>
+                  </bds10_rgn_data>
+                </mod_bds10_aec_data>
+              </hdr_aec_data>
+            </mod_bds10_hdr_aec_data>
+          </drc_gain_data>
+        </mod_bds10_drc_gain_data>
+      </pre_scale_ratio_data>
+    </mod_bds10_pre_scale_ratio_data>
+    <mod_bds10_pre_scale_ratio_data>
+      <pre_scale_ratio_trigger>
+        <start>2.3</start>
+        <end>100</end>
+      </pre_scale_ratio_trigger>
+      <pre_scale_ratio_data>
+        <mod_bds10_drc_gain_data>
+          <drc_gain_trigger>
+            <start>1</start>
+            <end>100</end>
+          </drc_gain_trigger>
+          <drc_gain_data>
+            <mod_bds10_hdr_aec_data>
+              <hdr_aec_trigger>
+                <exp_time_start>1</exp_time_start>
+                <exp_time_end>16</exp_time_end>
+                <aec_sensitivity_start>1</aec_sensitivity_start>
+                <aec_sensitivity_end>16</aec_sensitivity_end>
+                <exp_gain_start>1</exp_gain_start>
+                <exp_gain_end>16</exp_gain_end>
+              </hdr_aec_trigger>
+              <hdr_aec_data>
+                <mod_bds10_aec_data>
+                  <aec_trigger>
+                    <lux_idx_start>1</lux_idx_start>
+                    <lux_idx_end>900</lux_idx_end>
+                    <gain_start>1</gain_start>
+                    <gain_end>200</gain_end>
+                  </aec_trigger>
+                  <bds10_rgn_data>
+                    <dpc_fmax>80</dpc_fmax>
+                    <dpc_fmin>32</dpc_fmin>
+                    <dpc_offset>32</dpc_offset>
+                    <direction_enable>1</direction_enable>
+                    <direction_offset>16</direction_offset>
+                    <f0_coeff_tab>
+                      <f0_coeff>1 0 0</f0_coeff>
+                    </f0_coeff_tab>
+                    <f1_coeff_tab>
+                      <f1_coeff>1 0 0</f1_coeff>
+                    </f1_coeff_tab>
+                    <f2_coeff_tab>
+                      <f2_coeff>0 1 0</f2_coeff>
+                    </f2_coeff_tab>
+                    <h_coeff_tab>
+                      <h_coeff>0 1 1 0</h_coeff>
+                    </h_coeff_tab>
+                  </bds10_rgn_data>
+                </mod_bds10_aec_data>
+              </hdr_aec_data>
+            </mod_bds10_hdr_aec_data>
+          </drc_gain_data>
+        </mod_bds10_drc_gain_data>
+      </pre_scale_ratio_data>
+    </mod_bds10_pre_scale_ratio_data>
+  </chromatix_bds10_core>
+</bds10_tfe>
