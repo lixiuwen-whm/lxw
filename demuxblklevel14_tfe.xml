@@ -54,20 +54,7 @@
             <aec_sensitivity_end>16</aec_sensitivity_end>
             <exp_gain_start>1</exp_gain_start>
             <exp_gain_end>16</exp_gain_end>
-          </hdr_aec_trigger>
-          <hdr_aec_data>
-            <mod_demuxblklevel14_led_idx_data>
-              <led_idx_trigger>0</led_idx_trigger>
-              <led_idx_data>
-                <mod_demuxblklevel14_aec_data>
-                  <aec_trigger>
-                    <lux_idx_start>1</lux_idx_start>
-                    <lux_idx_end>900</lux_idx_end>
-                    <gain_start>1</gain_start>
-                    <gain_end>1.1</gain_end>
-                  </aec_trigger>
-                  <aec_data>
-                    <mod_demuxblklevel14_cct_data>
+          </hdr_aec_trigger>                    <mod_demuxblklevel14_cct_data>
                       <cct_trigger>
                         <start>1</start>
                         <end>10000</end>
